@@ -20,12 +20,17 @@ function _draw() {
 //Public
 export class ValuesController {
   constructor() {
-    ProxyState.on("values", _draw);
-    _draw()
+    // ProxyState.on("values", _draw);
+    // _draw()
   }
 
   addValue() {
-    valuesService.addValue()
+    document.getElementById('body').classList.add("animate-flicker")
+   let audio = document.getElementById('battle')
+   audio.play()
+   setInterval(() => {
+    audio.pause()
+     document.getElementById('body').classList.remove("animate-flicker")}, 4000)
   }
 
   removeValue(id) {

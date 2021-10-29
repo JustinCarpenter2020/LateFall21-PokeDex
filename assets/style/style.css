@@ -1,1 +1,87 @@
 /* BASIC STYLES HERE */
+.button {
+  background-color: #004A7F;
+  border-radius: 50%;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+  height: 5vh;
+  width: 5vh;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #33cfff; -webkit-box-shadow: 0 0 3px #0288b1; }
+  50% { background-color: #33cfff; -webkit-box-shadow: 0 0 40px #33cfff; }
+  100% { background-color: #0288b1; -webkit-box-shadow: 0 0 3px #0288b1; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #0288b1; -moz-box-shadow: 0 0 3px #0288b1; }
+  50% { background-color: #33cfff; -moz-box-shadow: 0 0 40px #33cfff; }
+  100% { background-color: #0288b1; -moz-box-shadow: 0 0 3px #0288b1; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #0288b1; box-shadow: 0 0 3px #0288b1; }
+  50% { background-color: #33cfff; box-shadow: 0 0 40px #33cfff; }
+  100% { background-color: #0288b1; box-shadow: 0 0 3px #0288b1; }
+}
+
+@keyframes glowing {
+  0% { background-color: #0288b1; box-shadow: 0 0 3px #0288b1; }
+  50% { background-color: #33cfff; box-shadow: 0 0 40px #33cfff; }
+  100% { background-color: #0288b1; box-shadow: 0 0 3px #0288b1; }
+}
+
+
+
+
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+.animate-flicker {
+   -webkit-animation: flickerAnimation .5s infinite;
+   -moz-animation: flickerAnimation .5s infinite;
+   -o-animation: flickerAnimation .5s infinite;
+    animation: flickerAnimation .5s infinite;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+
+.height{
+  height: 100vh;
+}
+
+.red{
+  background-color: #d80000c9;
+}

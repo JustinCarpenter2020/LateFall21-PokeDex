@@ -14,21 +14,27 @@
   <title>LateFall21-PokeDex</title>
 </head>
 
-<body>
+<body id="body">
   <header>
     <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
-      <a class="navbar-brand ms-3" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
-          loading="lazy">
-        <span class="ms-2">LateFall21-PokeDex</span>
+      <a class="button ms-3" onclick="app.valuesController.addValue()">
       </a>
     </nav>
   </header>
   <main>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
+      <div class="row height">
+        <div class="col-3 height bg-dark text-light">
+          Wild Pokemon
+          <div id="wild"></div>
+        </div>
+        <div class="col-6 red">
+          active
+          <div id="active"></div>
+          <audio id="battle" src="./assets/sounds/POKEMON BATTLE START SOUND EFFECT.mp3"></audio>
+        </div>
+        <div class="col-3 bg-dark text-light">
+          My Pokemon
         </div>
       </div>
     </div>
@@ -42,6 +48,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="app/main.js" type="module"></script>
 </body>
 
